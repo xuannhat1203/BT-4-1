@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let books = [
+        {id:1, title: "nhất"},
+        {id:2, title: "nhất2"},
+        {id:3, title: "nhất3"}
+        ]
+        let b = 1;
+        let rusult = books.forEach((item) =>{
+            if(item.id === b){
+                console.log(`${item.id}`);
+                console.log(`${item.title}`);
+            }
+        })
+    </script>
+</body>
+</html>

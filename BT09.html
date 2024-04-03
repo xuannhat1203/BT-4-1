@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let users = [
+            { id: 1, name: 'Alice', hobbies: ['Reading', 'Drawing'] }, 
+            { id: 2, name: 'Bob', hobbies: ['Gaming', 'Cooking'] },
+        ]
+        let a = users.filter((item) => {
+            return item.id == 1;
+        })
+        let b = users.filter((item) => {
+            return item.id == 2;
+        })
+        console.log(a[0].hobbies.concat(b[0].hobbies));
+    </script>
+</body>
+</html>

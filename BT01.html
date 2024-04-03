@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array = [
+            {
+                id:1,
+                name: "nhất",
+                add: "Hải Dương",
+            },
+            {
+                id:2,
+                name: "nhất2",
+                add: "Hải Dương2",
+            }        
+        ];
+        let resual = array.forEach((item) => {
+            console.log(item.name);
+        })
+        console.log("************");
+        let resual2 = array.find((item) =>{
+            console.log(item.name);
+        })
+        console.log("************");
+        let resual3 = array.map((item) =>{
+            console.log(item.name);
+        })
+    </script>
+</body>
+</html>

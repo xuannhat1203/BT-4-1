@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let accounts = [
+        {
+            userName: "xuannhat1203",
+            passWord: "xuannhat",
+        },
+        {
+            userName: "xuannhat120",
+            passWord: "xuan nhat",
+        },
+        {
+            userName: "xuannhat12",
+            passWord: "xuannhat",
+        },
+        {
+            userName: "xuannhat123",
+            passWord: "xuannhat ",
+        },
+        {
+            userName: "xuannhat103",
+            passWord: "xuannhat",
+        },
+        ];
+
+        accounts.forEach((item, index) => {
+        if (item.passWord.includes(" ")) {
+            console.log("Mật khẩu không hợp lệ tại vị trí", index);
+        } else {
+            console.log("Mật khẩu hợp lệ tại vị trí");
+        }
+        });
+    </script>
+</body>
+</html>
